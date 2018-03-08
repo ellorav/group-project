@@ -1,42 +1,187 @@
-/*.topnav {
-  position: fixed;
-  top: 0;
-  width: 100px;
-}
-*/
-.col-sm-4 {
-  margin: 30px 0px;
+.yes {
+  padding: 16px 16px;
+  display: none;
+  text-align: center;
+  font-size: 13pt;
+  color: rgba(255,255,255,1);
+  /*background: black;
+  background: linear-gradient(top, rgba(64, 64, 64, 1), rgba(64, 64, 64, .4));
+  background: -webkit-linear-gradient(top, rgba(64, 64, 64, 1), rgba(64, 64, 64, .4));
+  background: -moz-linear-gradient(top, rgba(64, 64, 64, 1), rgba(64, 64, 64, .4));*/
+  /*background: linear-gradient(#379683, #85f2dc);
+  background: -webkit-linear-gradient(#379683, #85f2dc);
+  background: -moz-linear-gradient(#379683, #85f2dc);*/
+  background-color: #40b29b;
+  opacity: 0.9;
+  max-width: 250px;
 }
 
-title {
+/*title {
   color: #404040;
-}
+}*/
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 10px;
+  overflow: hidden;
+  background-color: #404040;
+  opacity: 0.7;
+}
+
+li a:hover:not(.active) {
     background-color: #404040;
+}
+
+.active {
+    background-color: #379683;
+}
+
+li:last-child {
+    border-right: none;
 }
 
 li {
-    float: left;
+  float: left;
+  border: none;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 li a:hover {
-    background-color: #404040;
+  background-color: #404040;
+  color: #379683;
+  text-decoration: none;
 }
 
+li a:active {
+  background-color: #379683;
+}
 
-.btn:hover {
-    background-color: #404040;
+h1 {
+  font-size: 45px;
+  color: #379683;
+  text-transform: uppercase;
+  font-family: Montserrat;
+}
+
+.container{
+  font-family: Montserrat;
+}
+
+.title {
+  font-size: 45px;
+  color: #379683;
+  padding: 40px 0px 60px 0px;
+}
+
+#text {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px 50px;
+  line-height: 200%;
+  position: relative;
+}
+
+.btn-lg {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: 25px 25px;
+  padding: 0px;
+  color: black;
+}
+
+.btn-lg:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.7;
+  color: black;
+}
+
+.Reason1 {
+  background-image: url(./button-images/image1.jpg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason2 {
+  background-image: url(./button-images/image2.jpg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason3 {
+  background-image: url(./button-images/image3.jpg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason4 {
+  background-image: url(./button-images/image4.jpg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason5 {
+  background-image: url(./button-images/image5.jpeg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason6 {
+  background-image: url(./button-images/image6.jpeg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason7 {
+  background-image: url(./button-images/image7.jpeg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason8 {
+  background-image: url(./button-images/image8.jpg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+.Reason9 {
+  background-image: url(./button-images/image9.jpeg);
+  background-repeat: none;
+  background-position: relative;
+  background-size: auto;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+button:focus {
+  outline: none;
+}
+
+.box {
+  background-color: #9dddd1;
+  text-align: center;
 }

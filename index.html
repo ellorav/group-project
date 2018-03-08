@@ -8,54 +8,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./index.js"></script>
   <script src="./jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
 
-<ul>
-  <li><a href="./index.html">home</a></li>
-  <li><a href="./about.html">About</a></li>
-</ul>
-
-  <!--
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="./about.html">About</a>
-  </div>
-    -->
-  <div class="container">
-    <div class="text-center">
-      <h1>Health benefits of drinking water</h1>
-      <div class="col-sm-4" "Reason1">
-        <button class="btn btn-lg" type="submit">Reason 1</button>
-      </div>
-      <div class="col-sm-4" "Reason2">
-        <button class="btn btn-lg" type="submit">Reason 2</button>
-      </div>
-      <div class="col-sm-4" "Reason3">
-        <button class="btn btn-lg" type="submit">Reason 3</button>
-      </div>
-
-      <div class="col-sm-4" "Reason4">
-        <button class="btn btn-lg" type="submit">Reason 4</button>
-      </div>
-      <div class="col-sm-4" "Reason5">
-        <button class="btn btn-lg" type="submit">Reason 5</button>
-      </div>
-      <div class="col-sm-4" "Reason6">
-        <button class="btn btn-lg" type="submit">Reason 6</button>
-      </div>
-
-      <div class="col-sm-4" "Reason7">
-        <button class="btn btn-lg" type="submit">Reason 7</button>
-      </div>
-      <div class="col-sm-4" "Reason8">
-        <button class="btn btn-lg" type="submit">Reason 8</button>
-      </div>
-      <div class="col-sm-4" "Reason9">
-        <button class="btn btn-lg" type="submit">Reason 9</button>
+    <ul>
+      <li><a class="active" href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+<div class="container">
+      <div class="text-center">
+        <h1 class="title">Health benefits of drinking water</h1>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason1" type="submit">Increases Energy</button>
+          <div class="panel1 yes">
+            Hydrating your body increases its power to work to its full capacity. Not only will you avoid feeling tired, but you'll never have an excuse to be lazy again.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason2" type="submit">Calorie Control</button>
+          <div class="panel2 yes">
+            Water can increase satiety and boost your metabolic rate. The timing is important too, and drinking water half an hour before meals is the most effective. It can make you feel more full so that you eat fewer calories.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason3" type="submit">Clearer Skin</button>
+          <div class="panel3 yes">
+            Drinking water has been found to increase blood flow to the skin and may help improve skin density. By hydrating your skin, water also reduces toxin-caused blemishes - it works better than any moisturiser!
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason4" type="submit">Kidney Function</button>
+          <div class="panel4 yes">
+            Higher fluid intake increases the volume of urine passing through the kidneys, which dilutes the concentration of minerals, so they are less likely to crystalise and form clumps.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason5" type="submit">Muscle Fuel</button>
+          <div class="panel5 yes">
+            Physical performance can suffer due to dehydration. Proper hydration helps keep joints lubricated and muscles more elastic so joint pain is also less likely.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason6" type="submit">Keep Things Flowing</button>
+          <div class="panel6 yes">
+            Increasing fluid intake is often recommended to fight constipation, as water encourages regular bowel movements.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason7" type="submit">Hangover Help</button>
+          <div class="panel7 yes">
+            Alcohol consumption leads to dehydration as alcohol is a diuretic (makes you lose more water than you take in). The more water you drink, the more fluids you replace and the better you will feel. While nursing a bottle of water the next morning will certainly
+            help your hangover, this method is best used preventatively.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason8" type="submit">Happiness Boost</button>
+          <div class="panel8 yes">
+            Dehydration can affect your mood and make you feel sad, grumpy and confused. Water stimulates the flow of nutrients and hormones that release feel-good endorphines.
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn-lg Reason9" type="submit">Brain boost</button>
+          <div class="panel9 yes">
+            Studies show that even mild dehydration can impair many aspects of brain function. Water is required by every cell in the body and important for all body functions. It helps transport oxygen and nutrients critical to the brain for optimal function.
+          </div>
+        </div>
       </div>
     </div>
+
+    <script>
+
+      $(document).ready(function() {
+        $(".Reason1").click(function() {
+          $(".panel1").slideToggle("slow");
+          $(".panel1").css('display','inline-block');
+        });
+    });
+
+      $(document).ready(function() {
+        $(".Reason2").click(function() {
+          $(".panel2").slideToggle("slow");
+          $(".panel2").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason3").click(function() {
+          $(".panel3").slideToggle("slow");
+          $(".panel3").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason4").click(function() {
+          $(".panel4").slideToggle("slow");
+          $(".panel4").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason5").click(function() {
+          $(".panel5").slideToggle("slow");
+          $(".panel5").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason6").click(function() {
+          $(".panel6").slideToggle("slow");
+          $(".panel6").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason7").click(function() {
+          $(".panel7").slideToggle("slow");
+          $(".panel7").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason8").click(function() {
+          $(".panel8").slideToggle("slow");
+          $(".panel8").css('display','inline-block');
+        });
+      });
+
+      $(document).ready(function() {
+        $(".Reason9").click(function() {
+          $(".panel9").slideToggle("slow");
+          $(".panel9").css('display','inline-block');
+        });
+      });
+
+    </script>
+
   </div>
 </body>
 
