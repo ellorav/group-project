@@ -3,7 +3,7 @@
   display: none;
   text-align: center;
   font-size: 13pt;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   /*background: black;
   background: linear-gradient(top, rgba(64, 64, 64, 1), rgba(64, 64, 64, .4));
   background: -webkit-linear-gradient(top, rgba(64, 64, 64, 1), rgba(64, 64, 64, .4));
@@ -30,15 +30,15 @@ ul {
 }
 
 li a:hover:not(.active) {
-    background-color: #404040;
+  background-color: #404040;
 }
 
 .active {
-    background-color: #379683;
+  background-color: #379683;
 }
 
 li:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 li {
@@ -74,14 +74,24 @@ h1 {
   font-family: Montserrat;
 }
 
-.container{
+.container {
   font-family: Montserrat;
+  padding: 0px 0px 80px 0px;
+  position: relative;
 }
 
 .title {
   font-size: 45px;
   color: #379683;
-  padding: 40px 0px 60px 0px;
+  padding: 30px 0px 30px 0px;
+  margin: 50px 0px 30px 0px;
+  background-color: white;
+  opacity: 1;
+}
+
+#body {
+  background: url(./drops6.jpg);
+  background-position: fixed;
 }
 
 #text {
@@ -100,13 +110,15 @@ h1 {
   height: 250px;
   margin: 50px 50px;
   padding: 0px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 .btn-lg:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.7;
+  opacity: 0.9;
   color: black;
+  text-shadow: 2px 2px 5px white;
 }
 
 .Reason1 {
@@ -172,9 +184,10 @@ h1 {
   background-size: auto;
 }
 
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+  }
 }
 
 button:focus {
