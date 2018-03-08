@@ -14,6 +14,7 @@
   background-color: #40b29b;
   opacity: 0.9;
   max-width: 250px;
+  line-height: 170%;
 }
 
 /*title {
@@ -54,7 +55,7 @@ li a {
   text-decoration: none;
   font-family: Montserrat;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: regular;
 }
 
 li a:hover {
@@ -86,7 +87,6 @@ h1 {
   padding: 30px 0px 30px 0px;
   margin: 50px 0px 30px 0px;
   background-color: white;
-  opacity: 1;
 }
 
 #body {
@@ -95,7 +95,7 @@ h1 {
 }
 
 #text {
-  font-size: 20px;
+  font-size: 16pt;
   text-align: center;
   padding: 30px 50px;
   line-height: 200%;
