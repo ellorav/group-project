@@ -1,3 +1,4 @@
+/* styles buttons with class "yes"*/
 .yes {
   padding: 16px 16px;
   display: none;
@@ -11,6 +12,7 @@
   position: relative;
 }
 
+/*styles top navigation bar*/
 ul {
   list-style-type: none;
   margin: 0px;
@@ -20,23 +22,17 @@ ul {
   opacity: 0.7;
 }
 
-li a:hover:not(.active) {
-  background-color: #404040;
-}
-
+/*styles the active option in the top navigation bar*/
 .active {
   background-color: #379683;
 }
 
-li:last-child {
-  border-right: none;
+/*styles the inactive option in the top navigation bar*/
+li a:hover:not(.active) {
+  background-color: #404040;
 }
 
-li {
-  float: left;
-  border: none;
-}
-
+/*styles elements in the navigation bar*/
 li a {
   display: block;
   color: white;
@@ -46,52 +42,42 @@ li a {
   font-family: Montserrat, Arial;
   text-transform: uppercase;
   font-weight: regular;
+  float: left;
+  border: none;
 }
 
+/*styles the options in the top navigation bar when hovered over*/
 li a:hover {
   background-color: #404040;
   color: #379683;
   text-decoration: none;
 }
 
-li a:active {
-  background-color: #379683;
-}
-
-h1 {
-  font-size: 45px;
-  color: #379683;
-  text-transform: uppercase;
-  font-family: Montserrat, Arial;
-}
-
-.container {
-  font-family: Montserrat, Arial;
-  padding: 0px 0px 80px 0px;
-  position: relative;
-}
-
+/*styles the header on both pages*/
 .title {
   font-size: 45px;
   color: #379683;
   padding: 30px 0px 30px 0px;
   margin: 50px 0px 30px 0px;
   background-color: white;
+  text-transform: uppercase;
+  font-family: Montserrat, Arial;
 }
 
+/*styles everything inside the container tag - all of body*/
+.container {
+  font-family: Montserrat, Arial;
+  padding: 0px 0px 80px 0px;
+  position: relative;
+}
+
+/*styles the "body" id*/
 #body {
   background: url(./drops6.jpg);
   background-position: fixed;
 }
 
-#text {
-  font-size: 16pt;
-  text-align: center;
-  padding: 30px 50px;
-  line-height: 200%;
-  position: relative;
-}
-
+/*styles the buttons on the index.html page*/
 .btn-lg {
   background-color: transparent;
   border: none;
@@ -105,11 +91,13 @@ h1 {
   position: relative;
 }
 
+/*styles each row of 3 buttons*/
 .row {
   margin: 50px 50px;
   position: relative;
 }
 
+/*styles the buttons on the index.html page when hovered over*/
 .btn-lg:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.9;
@@ -117,6 +105,12 @@ h1 {
   text-shadow: 2px 2px 5px white;
 }
 
+/*styles buttons when clicked on - removes automatic blue border*/
+button:focus {
+  outline: none;
+}
+
+/*styles the first button "increases energy"*/
 .Reason1 {
   background-image: url(./button-images/image1.jpg);
   background-repeat: none;
@@ -124,6 +118,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the second button "calorie control"*/
 .Reason2 {
   background-image: url(./button-images/image2.jpg);
   background-repeat: none;
@@ -131,6 +126,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the third button "clearer skin"*/
 .Reason3 {
   background-image: url(./button-images/image3.jpg);
   background-repeat: none;
@@ -138,6 +134,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the fourth button "kidney function"*/
 .Reason4 {
   background-image: url(./button-images/image4.jpg);
   background-repeat: none;
@@ -145,6 +142,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the fifth button "muscle fuel"*/
 .Reason5 {
   background-image: url(./button-images/image5.jpeg);
   background-repeat: none;
@@ -152,6 +150,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the sixth button "keep things flowing"*/
 .Reason6 {
   background-image: url(./button-images/image6.jpeg);
   background-repeat: none;
@@ -159,6 +158,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the seventh button "hangover help"*/
 .Reason7 {
   background-image: url(./button-images/image7.jpeg);
   background-repeat: none;
@@ -166,6 +166,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the eighth button "happiness boost"*/
 .Reason8 {
   background-image: url(./button-images/image8.jpg);
   background-repeat: none;
@@ -173,6 +174,7 @@ h1 {
   background-size: auto;
 }
 
+/*styles the ninth button "brain boost"*/
 .Reason9 {
   background-image: url(./button-images/image9.jpeg);
   background-repeat: none;
@@ -180,12 +182,14 @@ h1 {
   background-size: auto;
 }
 
+/*when the browser is smaller than 600px the buttons stack on top of each other*/
 @media screen and (max-width: 600px) {
   ul.topnav li.right, ul.topnav li {
     float: none;
   }
 }
 
+/*when the browser is between 534px and 992px the drop down information boxes stay in line with the buttons*/
 @media screen and (min-width: 534px) and (max-width: 992px) {
   .col-md-4 {
     max-width: 250px;
@@ -197,11 +201,13 @@ h1 {
   }
 }
 
-button:focus {
-  outline: none;
-}
-
+/*styles the main body of text in the "box" class on about.html page*/
 .box {
   background-color: #9dddd1;
   text-align: center;
+  font-size: 16pt;
+  text-align: center;
+  padding: 30px 50px;
+  line-height: 200%;
+  position: relative;
 }
